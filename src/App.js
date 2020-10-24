@@ -36,8 +36,6 @@ const CustomDatePicker = () => {
   } 
   const [startDate, setStartDate] = useState(new Date());
 
-  const [isLoaded, setLoaded] = useState(false);
-
   useEffect(() => {
     const newSynth = new Tone.PolySynth(Tone.FMSynth).toDestination();
     newSynth.set({
